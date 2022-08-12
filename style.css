@@ -1,0 +1,230 @@
+/*Nous copions la police de google pour en faire celle de notre site web*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+/*Nous sélectionnons toutes les balises et les initialisons à 0*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nous définissons la police du corp du code à Roboto et nous ajoutons une seconde option au cas où la première ne marche pas*/ 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*Nous rendons l'entête stylé*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+  }
+
+
+  /*Ici nous attaquons la section principale la définition de la hauteur*/
+
+  main {
+   height: calc(100vh - 70px);
+   display: flex;
+   background-color: #f9f9f9;
+ }
+
+ /* Nous masquons la barre de défilement */ 
+.side-bar {
+    height: 100%;
+    width: 17%;
+    background-color: white;
+    overflow-y: hidden;
+} 
+
+/*Cette partie permet d'ajouter des requêtes mutimédia*/
+@media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+  }
+
+
+
+
+/*Nous offrons du style à la section de gauche*/
+  .left {
+ display: flex;
+ align-items: center;
+}
+
+.left #menu {
+ padding: 0 7px;
+ cursor: pointer;
+}
+
+
+/*Nous attaquons la section centrale et nous travaillons sur sa forme*/
+.search {
+ display: flex;
+}
+
+.search form {
+ display: flex;
+ border: 1px solid #ddd;
+ height: 45px;
+}
+
+
+
+/*Là nous comprenons que nous devons styliser l'entrée du formulaire de recherche*/
+.search input {
+  width: 600px;
+  padding:10px;
+  border: 0;
+  height: 100%;
+  border-radius: 2px 0 0 2px
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+/*Nous travaillons sur les icônes et les boutons de recherche et du micro*/
+.search button {
+  height: 100%;
+  width: 60px;
+  border: none;
+}
+
+.mic {
+  margin-top: 10px;
+}
+
+  .material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+  }
+
+/*Stylisons la barre de navigation*/
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+/*Le lien de navigation pour sa stylisation*/
+  .nav-link {
+   display: flex;
+   align-items: center;
+   padding: 12px 25px;
+ }
+
+.nav-link span {
+   margin-left: 15px;
+ }
+
+.nav-link:hover {
+   background: #e5e5e5;
+   cursor: pointer;
+ }
+
+.active {
+   background: #e5e5e5;
+}
+
+/*Maintenant nous stylisons le hr*/
+hr {
+   height: 1px;
+   background-color: #e5e5e5;
+   border: none;
+ }
+
+/*ici nous stylisons le contenu de notre site web*/
+ 
+ .content {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 170px;
+}
+
+.thumbnail img {
+  object-fit: cover;
+  height: 94%;
+  width: 100%;
+}
+.author img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+/*Nous supprimons les débordements. Nous cadrons les images ici pour qu'elles soient bien positionnées sur le site*/
+
+.details {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h3 {
+  color: rgb(3, 3, 3);
+  line-height: 18px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.title a,
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+
+
+/*Nous définissons les tailles des écrans sur lesquels le site sera affiché*/
+@media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+    .search {
+      display: none;
+    }
+}
+ /*Ce code permet de rendre l'entrée de la recherche petite*/
+@media (max-width: 900px) {
+    .search input {
+      width: 25rem;
+    }
+  }
+
+
+
+  /* Nous comprenons que l'ensemble de ce code qui offre à notre page sa beauté  */
