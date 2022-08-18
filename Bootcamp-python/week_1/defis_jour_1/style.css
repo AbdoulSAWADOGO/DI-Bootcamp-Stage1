@@ -1,0 +1,71 @@
+nav{
+	background-color: black;
+	display: flex;
+	justify-content: right;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+li {
+  float: left;
+}
+
+
+
+li{
+	display: inline-block;
+	margin-right: 50px;
+	color: white;
+	font-size: 300%;
+
+}
+
+ul{
+	margin-right: 20%;
+}
+
+
+body{
+	background-image: url("https://lp-cms-production.imgix.net/news/2019/05/Thor-Avengers.jpg");
+	background-size: cover;
+}
+
+h2{
+	font-size: 900%;
+	margin-left: 10%;
+	margin-top:130px;
+	color: red;
+	font-family: roboto, sans-serif;
+}
+
+p{
+	margin-top: 20px;
+	margin-left: 10%;
+	width: 30%;
+	height: 25%;
+	color: black;
+	font-family: roboto, sans-serif;
+	font-size: 110%;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   text-align: center;
+   
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 300%;
+}
+
+div{
+	margin-top: 25%;
+
+}
