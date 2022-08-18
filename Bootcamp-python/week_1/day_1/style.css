@@ -1,32 +1,53 @@
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
+ th, tr {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid;
 }
-th, td {
-  background-color: #96D4D4;
+table
+{
+width: 90%;
+margin-left: 5%;
+margin-right: 5%;
 }
 
-
+.surligne
+{
+	background-color: yellow;
+}
+.decale
+{
+	margin-left: 10%;
+}
 .toto 
 {
 	border: 1px solid red;
 	border-collapse: separate;
-}
-
-p {
+	margin-left: 5%;
+	margin-right: 5%;
 	color: red;
-	background-color: #F0FFF0;
+	text-align: center;
 }
 
-ol
+.lion
 {
-	color: green;
+	border: 5px solid orange;
+	width: 350px;
+	height: 200px;
+	text-align: center;
+}
 
+footer{
+	text-align: center;
 }
 .media
 {
 	text-align: center;
 }
-.img
+.cat
 {
-margin-left: 100px}
+margin-left: 100px;
+width: 250px;
+height: 120px;
+border: 5px solid orange;
+
+
